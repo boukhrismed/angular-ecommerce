@@ -1,0 +1,20 @@
+/****** Boiler Plate ******/
+
+--> Create angular project
+ng new app-name
+ng serve --open
+
+--> how an angular app is launched?
+main.ts //platformBrowserDynamic().bootstrapModule(AppModule)  then app.module //bootstrap: [AppComponent]
+
+--> Adding bootstrap and font-awesome
+npm install bootstrap@4.6.0
+npm install font-awsome
+
+--> we should specify bootstrap + font-awesome node modules folder in "angular.json" file
+In architect/build/options/styles add paths:
+"./node_modules/bootstrap/dist/css/bootstrap.min.css",
+"./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+"./node_modules/font-awesome/css/font-awesome.min.css",
+
+
